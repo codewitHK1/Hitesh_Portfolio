@@ -66,7 +66,7 @@ const Portfolio = () => {
         </SwiperSlide>
         <SwiperSlide>
           <a
-            href="https://codewithk1.github.io/HKweather/"
+            href="https://reactresumehk.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
