@@ -1,44 +1,66 @@
-.portfolio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  margin-top: 6rem;
 }
-.portfolio span:nth-of-type(1){
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: bold;
+.portfolio span:nth-of-type(1) {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: bold;
 }
-.portfolio span:nth-of-type(2){
-    color: var(--orange);
-    font-size: 2.5rem;
-    font-weight: bold;
+.portfolio span:nth-of-type(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
 }
-.portfolio .swiper{
-    overflow: visible !important;
+.mern {
+  border: 1px solid var(--orange);
+  border-radius: 2rem;
+  padding: 1rem;
+  max-height: 60vh;
+  margin: 0;
 }
-.portfolio-slider{
-    margin-top: 3rem;
-    width: 100%;
+.mern > h3 {
+  text-align: center;
+  font-weight: bold;
 }
-.portfolio-slider .swiper-slide{
-    width: 20rem;
+.portfolio .swiper {
+  overflow: visible !important;
 }
-.portfolio img{
-    width: 19rem;
-    filter: drop-shadow(-12px 15px 13px rbga(0,0,0,0.25));
-    border-radius: 19px;
+.portfolio-slider {
+  margin-top: 3rem;
+  width: 100%;
+}
+.portfolio img:nth-of-type(1) {
+  width: 100%;
+  border: none;
+}
+.portfolio-slider .swiper-slide {
+  width: 17rem;
+}
+.portfolio img {
+  width: 19rem;
+  filter: drop-shadow(-12px 15px 13px rbga(0, 0, 0, 0.25));
+  border-radius: 19px;
+  border: 1px solid var(--orange);
+  max-height: 50vh;
 }
 
-@media screen and (max-width:680px){
-    .portfolio{
-        margin-top: -5rem;
-        margin-bottom: 5rem;
-        height: 50vh;
-    }
-    .portfolio img{
-      width: 12rem;
-      height: 10rem;
-    }
+@media screen and (max-width: 680px) {
+  .portfolio {
+    margin-top: -5rem;
+    margin-bottom: 5rem;
+    height: 50vh;
+  }
+  .portfolio img {
+    width: 12rem;
+    height: 10rem;
+  }
+  .portfolio-slider {
+    margin-top: 3rem;
+    width: 190%;
+  }
 }
